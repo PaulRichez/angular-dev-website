@@ -1,5 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --code-font: "DM Mono", monospace;
+  --inter-font: "Inter", var(--fallback-font-stack);
+  --inter-tight-font: "Inter Tight", var(--fallback-font-stack);
+  --icons: "Material Symbols Outlined";
+  --selection-background: var(--vivid-pink);
+  --selection-color: var(--vivid-pink);
+}
+
 body {
+  font-family: "Inter";
+  color: var(--primary-contrast);
+  background-color: var(--page-background);
+  margin: 0;
+}
+
+html {
+  font-family: var(--inter-font);
+  color: var(--primary-contrast);
   background-color: var(--page-background);
 }
