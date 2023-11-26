@@ -1,0 +1,33 @@
+<nav class="adev-nav-primary">
+  <ul class="adev-nav__top">
+    <li class="adev-nav-item adev-nav-item--logo">
+      <a>
+        <img src="assets/icons/logo.svg" alt="Angular Developer Logo" />
+        <div class="adev-beta-version">Beta Docs</div>
+      </a>
+    </li>
+    <li class="adev-nav-item">
+      <button type="button" class="adev-nav-button">
+        <i class="material-symbols-outlined">search</i>
+        <span class="adev-nav-item__label adev-search-desktop" aria-label="Open search dialog with Control K">
+          <kbd>Ctrl</kbd>
+          <kbd>K</kbd>
+        </span>
+      </button>
+    </li>
+    <li class="adev-nav-item" *ngFor="let item of navItems">
+      <a [routerLink]="item.link">
+        <i class="material-symbols-outlined"
+          [ngStyle]="{'transform':item.rotate ? 'rotate(90deg)' : 'rotate(0deg)'}">{{item.icon}}</i>
+        {{item.label}}
+      </a>
+  </ul>
+  <div class="adev-nav__bottom">
+    <button type="button" aria-label="Open social media links" role="button">
+      <i class="material-symbols-outlined">more_horiz</i>
+    </button>
+    <button type="button" aria-label="Open theme picker" role="button">
+      <i class="material-symbols-outlined">routine </i>
+    </button>
+  </div>
+</nav>

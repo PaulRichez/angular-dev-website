@@ -1,0 +1,15 @@
+#root-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-inline: auto;
+  align-items: flex-start;
+  @media (min-width: 900px) {
+   flex-direction: row
+   ;
+  }
+  .main-content {
+    width: 100%;
+    min-height: 100vh;
+  }
+}

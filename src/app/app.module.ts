@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 import { NgHttpLoaderModule } from 'ng-http-loader';
+import { NavBarComponent } from './core/componenets/nav-bar/nav-bar.component';
 
 
 
@@ -16,6 +17,7 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
     AppRoutingModule,
     HttpClientModule,
     NgHttpLoaderModule.forRoot(),
+    NavBarComponent
   ],
   bootstrap: [AppComponent]
 })

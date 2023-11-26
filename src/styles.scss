@@ -21,3 +21,36 @@ html {
   color: var(--primary-contrast);
   background-color: var(--page-background);
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+ul, ol {
+  font-size: .875rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -.01rem;
+}
+
+button {
+  font-family: var(--inter-font);
+  background: transparent;
+  -webkit-appearance: none;
+  border: 0;
+  font-weight: 600;
+}
