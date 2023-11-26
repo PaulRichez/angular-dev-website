@@ -23,7 +23,7 @@ export class NavBarComponent {
       rotate: true,
     },
     {
-      label: 'playground',
+      label: 'Playground',
       icon: 'joystick',
       link: 'playground'
     },

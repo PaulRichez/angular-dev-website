@@ -1,0 +1,56 @@
+.adev-top {
+  position: absolute;
+  top: 0;
+
+  .adev-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-inline: var(--layout-padding);
+    gap: 0.5rem;
+
+    @media (min-width: 900px) {
+      padding-top: var(--layout-padding);
+      padding-left: calc(var(--layout-padding) + var(--primary-nav-width));
+    }
+  }
+
+  .adev-banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    z-index: 10;
+    border: 1px solid var(--senary-contrast);
+    background: var(--page-background);
+    position: relative;
+    border-radius: 0.25rem;
+    padding: 10px;
+    max-width: 100%;
+    width: fit-content;
+    box-sizing: border-box;
+    transition: background .3s ease, border .3s ease;
+  }
+
+  a {
+    color: var(--bright-blue);
+  }
+
+  .adev-banner p {
+    display: inline;
+    font-size: .875rem;
+    margin: 0;
+    background-image: var(--red-to-pink-to-purple-horizontal-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: fit-content;
+    font-weight: 500;
+  }
+
+  .adev-banner p.adev-banner-cta {
+    color: var(--tertiary-contrast);
+  }
+}
